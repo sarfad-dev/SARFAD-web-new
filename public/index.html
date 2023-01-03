@@ -32,7 +32,7 @@
 <body class="font-poppins bg-background-200 box-border m-0 p-0">
     <div id="home">
         <div>
-            <nav class="h-14 bg-black/50 backdrop-blur-sm font-poppins flex items-center fixed top-0 left-0 right-0">
+            <nav class="h-14 bg-black/50 backdrop-blur-sm font-poppins flex items-center fixed z-10 top-0 left-0 right-0 ">
                 <div class="">
                     <img class="w-20" src="/images/Sarfad_Logo_no_bg.webp" alt="SARFAD (logo)">
                 </div>
@@ -68,111 +68,99 @@
     </div>
     <div class="text-white mx-6 min-h-screen" id="team">
         <h1 class="font-bold text-xl text-center py-16 underline decoration-yellow-400">Náš tým</h1>
-        <p class="pb-6">Jsme šestičelnný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
-        <div class="flex flex-col items-start w-full gap-6 pb-10 sm:grid sm:grid-cols-3 sm:gap-x-16 sm:gap-y-12">
-            <div class="rounded-lg pb-8 bg-background-100 max-w-xs ">
-                <div>
-                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+        <p class="pb-6 text-center w-1/2 mx-auto">Jsme šestičelnný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
+        <div class="w-full flex items-center justify-center flex-wrap pt-10 pl-4">
+            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="/images/holub.webp" alt="Prokop Havlík">
                 </div>
-                <div class="text-center px-2">
-                    <h3 class="text-lg font-bold">Jakub Holub</h3>
-                    <span class="text-yellow-400 text-xs inline-block mb-3">Head organizer & Management</span>
-                    <div class="">
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-discord"></a>
-                        <a href="#" class="fab fa-github"></a>
-                    </div>
+                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
+                <p class="text-center mb-3">Website</p>
+                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-instagram text-4xl"></a></button>
                 </div>
             </div>
-            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
-                <div>
-                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="/images/holub.webp" alt="Prokop Havlík">
                 </div>
-                <div class="text-center px-2">
-                    <h3 class="text-lg font-bold lg:text-md ">Jakub Němčík</h3>
-                    <span class="text-yellow-400 text-xs inline-block mb-3">Content creator & Graphics designer</span>
-                    <div class="mb-2">
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-discord"></a>
-                        <a href="#" class="fab fa-github"></a>
-                    </div>
+                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
+                <p class="text-center mb-3">Website</p>
+                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-instagram text-4xl"></a></button>
                 </div>
             </div>
-            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
-                <div>
-                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="/images/holub.webp" alt="Prokop Havlík">
                 </div>
-                <div class="text-center px-2">
-                    <h3 class="text-lg font-bold lg:text-md">Prokop Havlík</h3>
-                    <span class="text-yellow-400 text-xs inline-block mb-3">Web developer & Graphics designer</span>
-                    <div class="mb-2">
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-discord"></a>
-                        <a href="#" class="fab fa-github"></a>
-                    </div>
+                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
+                <p class="text-center mb-3">Website</p>
+                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-instagram text-4xl"></a></button>
                 </div>
             </div>
-            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
-                <div>
-                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="/images/holub.webp" alt="Prokop Havlík">
                 </div>
-                <div class="text-center px-2 lg:text-md">
-                    <h3 class="text-lg font-bold">Alexandr Chovanec</h3>
-                    <span class="text-yellow-400 text-xs inline-block mb-3">Hardware & 3D Modeling</span>
-                    <div class="mb-2">
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-discord"></a>
-                        <a href="#" class="fab fa-github"></a>
-                    </div>
+                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
+                <p class="text-center mb-3">Website</p>
+                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-instagram text-4xl"></a></button>
                 </div>
             </div>
-            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
-                <div>
-                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="/images/holub.webp" alt="Prokop Havlík">
                 </div>
-                <div class="text-center px-2">
-                    <h3 class="text-lg font-bold lg:text-md">David Oprštěný</h3>
-                    <span class="text-yellow-400 text-xs inline-block mb-3">Programmer & Parachute</span>
-                    <div class="mb-2">
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-discord"></a>
-                        <a href="#" class="fab fa-github"></a>
-                    </div>
+                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
+                <p class="text-center mb-3">Website</p>
+                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-instagram text-4xl"></a></button>
                 </div>
             </div>
-            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
-                <div>
-                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="/images/holub.webp" alt="Prokop Havlík">
                 </div>
-                <div class="text-center px-2">
-                    <h3 class="text-lg font-bold lg:text-md">Daniel Tomis</h3>
-                    <span class="text-yellow-400 text-xs inline-block mb-3">Programmer & Data analyst</span>
-                    <div class="mb-2">
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-discord"></a>
-                        <a href="#" class="fab fa-github"></a>
-                    </div>
+                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
+                <p class="text-center mb-3">Website</p>
+                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 "><a href="#" class="fab fa-instagram text-4xl"></a></button>
                 </div>
             </div>
         </div>
     </div>
     <div class="text-white" id="cansat">
         <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400">Co je to CanSat?</h1>
-        <p class="text-md mx-10">Soutěž pořádána vzdělávacím oddělením ESA (European Space Agency). Každý tým má za úkol sestavit “satelit” o velikosti i tvaru plechovky.<br>
+        <p class="text-md text-center w-3/4 mx-auto">Soutěž pořádána vzdělávacím oddělením ESA (European Space Agency). Každý tým má za úkol sestavit “satelit” o velikosti i tvaru plechovky.<br>
             Tím pádem se do této plechovky musí vlézt všechný základní komponenty satelitu, senzory, řídící jednotky a baterie což dokáže být opravdu výzva!<br>
             Úkol každého tým je splnit dvě mise. Jednu danou pořadately, druhou si musí sami vymyslet.</p>
     </div>
     <div class="text-white" id="mission">
-        <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400   ">Naše mise</h1>
-        <p class="text-md mx-10">Primární mise je jasně daná, jejím cílem je měřit předem vybrané parametry okolního prostředí a jednou za sekundu odesílat data do pozemní stanice. Těmito parametry jsou teplota vzduchu a atmosférický tlak. Tato získaná data musí být každý tým schopen analyzovat a v nějaké formě prezentovat.</p>
+        <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400">Naše mise</h1>
+        <p class="text-md text-center w-3/4 mx-auto">Primární mise je jasně daná, jejím cílem je měřit předem vybrané parametry okolního prostředí a jednou za sekundu odesílat data do pozemní stanice. Těmito parametry jsou teplota vzduchu a atmosférický tlak. Tato získaná data musí být každý tým schopen analyzovat a v nějaké formě prezentovat.</p>
         <br>
-        <p class="text-md mx-10 pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku.
+        <p class="text-md text-center w-3/4 mx-auto pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku.
             My jsme se při výběru naší mise zaměřili na technický pokrok. Cílem naší mise je postavit CanSat, který bude schopen řízeného přistání.</p>
     </div>
 </body>
