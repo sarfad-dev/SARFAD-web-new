@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
-<body class="font-poppins">
+<body class="font-poppins bg-background-200 box-border m-0 p-0">
     <div id="home">
         <div>
             <nav class="h-14 bg-black/50 backdrop-blur-sm font-poppins flex items-center fixed top-0 left-0 right-0">
@@ -43,8 +43,8 @@
                         </a>
                     </li>
                     <li class="mr-6">
-                        <a href="#about">
-                            <span>About</span>
+                        <a href="#team">
+                            <span>Náš tým</span>
                         </a>
                     </li>
                     <li class="mr-6">
@@ -53,36 +53,106 @@
                         </a>
                     </li>
                     <li class="mr-6">
-                        <a href="#team">
-                            <span>Náš tým</span>
-                        </a>
-                    </li>
-                    <li class="mr-6">
                         <a href="#mission">
-                            <span>Náše mise</span>
+                            <span>Naše mise</span>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div> <!--end nav-->
-        <div class="min-h-screen bg-cover bg-center flex flex-col items-center pb-10" style="background-image: url('/images/bg.webp');" >
-                <h1 class="text-white font-bold mt-56 text-7xl">SARFAD</h1>
-                <p class="text-white text-lg mt-10 mx-52">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odit saepe? Nam, cumque dolore. Nobis, excepturi dicta. Illum, commodi voluptatem! Eos porro rem temporibus et a laudantium facere ex dolorem.</p>
-                <a class="text-white text-lg font-bold rounded-full border-2 border-white p-2 mt-10 cursor-pointer" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
+        <div class="min-h-screen bg-cover bg-center flex flex-col items-center pb-10 text-white text stroke-sky-500" style="background-image: url('/images/bg.webp'); -webkit-text-stroke: 0.05rem ;" >
+                <h1 class="font-bold mt-56 text-7xl">SARFAD</h1>
+                <h2 class="text-lg mt-10 mx-5">POJ-FM CANSAT TEAM 2022</h2>
+                <a class="text-lg rounded-full border-2 border-white p-2 mt-10 cursor-pointer" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
         </div>
     </div>
-    <div class="bg-background-200 text-white" id="team">
-        <h1 class="font-bold text-xl text-center">Náš tým</h1>
-        <div class="xs:w-1/2 xs:mx-auto grid grid-cols-6 px-16">
-            <div class="bg-background-100 rounded-lg ">
-                <div class="pt-2">
-                    <img class="block mr-auto ml-auto" src="/images/holub.webp" alt="Jakub Holub">
+    <div class="text-white mx-6 min-h-screen" id="team">
+        <h1 class="font-bold text-xl text-center py-16 underline decoration-yellow-400">Náš tým</h1>
+        <p class="pb-6">Jsme šestičelnný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
+        <div class="flex flex-col items-start w-full gap-6 pb-10 sm:grid sm:grid-cols-3 sm:gap-x-16 sm:gap-y-12">
+            <div class="rounded-lg pb-8 bg-background-100 max-w-xs ">
+                <div>
+                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
                 </div>
                 <div class="text-center px-2">
                     <h3 class="text-lg font-bold">Jakub Holub</h3>
                     <span class="text-yellow-400 text-xs inline-block mb-3">Head organizer & Management</span>
-                    <p class="text-xs mb-3">POPIS(?)</p>
-                    <div class="mb-2 text-yellow-400">
+                    <div class="">
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-discord"></a>
+                        <a href="#" class="fab fa-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
+                <div>
+                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+                </div>
+                <div class="text-center px-2">
+                    <h3 class="text-lg font-bold lg:text-md ">Jakub Němčík</h3>
+                    <span class="text-yellow-400 text-xs inline-block mb-3">Content creator & Graphics designer</span>
+                    <div class="mb-2">
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-discord"></a>
+                        <a href="#" class="fab fa-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
+                <div>
+                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+                </div>
+                <div class="text-center px-2">
+                    <h3 class="text-lg font-bold lg:text-md">Prokop Havlík</h3>
+                    <span class="text-yellow-400 text-xs inline-block mb-3">Web developer & Graphics designer</span>
+                    <div class="mb-2">
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-discord"></a>
+                        <a href="#" class="fab fa-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
+                <div>
+                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+                </div>
+                <div class="text-center px-2 lg:text-md">
+                    <h3 class="text-lg font-bold">Alexandr Chovanec</h3>
+                    <span class="text-yellow-400 text-xs inline-block mb-3">Hardware & 3D Modeling</span>
+                    <div class="mb-2">
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-discord"></a>
+                        <a href="#" class="fab fa-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
+                <div>
+                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+                </div>
+                <div class="text-center px-2">
+                    <h3 class="text-lg font-bold lg:text-md">David Oprštěný</h3>
+                    <span class="text-yellow-400 text-xs inline-block mb-3">Programmer & Parachute</span>
+                    <div class="mb-2">
+                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-discord"></a>
+                        <a href="#" class="fab fa-github"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="rounded-lg pb-8 bg-background-100 max-w-xs">
+                <div>
+                    <img class="w-full" src="/images/holub.webp" alt="Jakub Holub">
+                </div>
+                <div class="text-center px-2">
+                    <h3 class="text-lg font-bold lg:text-md">Daniel Tomis</h3>
+                    <span class="text-yellow-400 text-xs inline-block mb-3">Programmer & Data analyst</span>
+                    <div class="mb-2">
                         <a href="#" class="fab fa-instagram"></a>
                         <a href="#" class="fab fa-facebook-f"></a>
                         <a href="#" class="fab fa-discord"></a>
@@ -92,17 +162,18 @@
             </div>
         </div>
     </div>
-    <div id="about">
-        <h1>O nás</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci doloribus, architecto quod corrupti, nihil, sint molestiae dignissimos eligendi deleniti incidunt animi blanditiis quo similique necessitatibus vel eum impedit pariatur?</p>
+    <div class="text-white" id="cansat">
+        <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400">Co je to CanSat?</h1>
+        <p class="text-md mx-10">Soutěž pořádána vzdělávacím oddělením ESA (European Space Agency). Každý tým má za úkol sestavit “satelit” o velikosti i tvaru plechovky.<br>
+            Tím pádem se do této plechovky musí vlézt všechný základní komponenty satelitu, senzory, řídící jednotky a baterie což dokáže být opravdu výzva!<br>
+            Úkol každého tým je splnit dvě mise. Jednu danou pořadately, druhou si musí sami vymyslet.</p>
     </div>
-    <div id="cansat">
-        <h1>Co je to CanSat?</h1>
-        <p></p>
-    </div>
-    <div id="mission">
-        <h1>Naše mise</h1>
-        <p></p>
+    <div class="text-white" id="mission">
+        <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400   ">Naše mise</h1>
+        <p class="text-md mx-10">Primární mise je jasně daná, jejím cílem je měřit předem vybrané parametry okolního prostředí a jednou za sekundu odesílat data do pozemní stanice. Těmito parametry jsou teplota vzduchu a atmosférický tlak. Tato získaná data musí být každý tým schopen analyzovat a v nějaké formě prezentovat.</p>
+        <br>
+        <p class="text-md mx-10 pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku.
+            My jsme se při výběru naší mise zaměřili na technický pokrok. Cílem naší mise je postavit CanSat, který bude schopen řízeného přistání.</p>
     </div>
 </body>
 </html> 
