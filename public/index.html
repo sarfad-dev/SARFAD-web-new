@@ -27,7 +27,10 @@
     <link rel="icon" href="images/Sarfad.webp">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 <body class="font-poppins bg-background-200 box-border m-0 p-0">
     <div id="home">
@@ -50,12 +53,12 @@
                     </li>
                     <li class="mr-6">
                         <a href="#team">
-                            <span class="hover:underline hover:decoration-yellow-400">Náš tým</span>
+                          <span class="hover:underline hover:decoration-yellow-400">CanSat</span>
                         </a>
                     </li>
                     <li class="mr-6">
                         <a href="#cansat">
-                            <span class="hover:underline hover:decoration-yellow-400">CanSat</span>
+                            <span class="hover:underline hover:decoration-yellow-400">Náš tým</span>
                         </a>
                     </li>
                     <li class="mr-6">
@@ -67,109 +70,181 @@
             </nav>
         </div> <!--end nav-->
         <div class="min-h-screen bg-cover bg-center flex flex-col items-center pb-10 text-white text stroke-sky-500" style="background-image: url('images/bg.webp'); -webkit-text-stroke: 0.05rem ;" >
-                <h1 class="font-bold mt-56 text-7xl">SARFAD</h1>
-                <h2 class="text-lg mt-10 mx-5">POJ-FM CANSAT TEAM 2022</h2>
+                <h1 class="font-bold mt-56 text-7xl drop-shadow-2xl">SARFAD</h1>
+                <h2 class="text-lg mt-10 mx-5 drop-shadow-lg">POJ-FM CANSAT TEAM 2022</h2>
                 <a class="text-lg rounded-full border-2 border-white p-2 mt-10 cursor-pointer hover:text-gray-100 hover:border-gray-100" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
         </div>
     </div>
-    <div class="text-white mx-6 min-h-screen" id="team">
-        <h1 class="font-bold text-xl text-center py-16 underline decoration-yellow-400">Náš tým</h1>
-        <p class="pb-6 text-center w-3/4 mx-auto md:w-1/2">Jsme šestičelnný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
-        <div class="w-full flex items-center justify-center flex-wrap pt-10 pl-4">
-            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
-                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
-                </div>
-                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>  
-                <p class="text-center mb-3">Web developer & Graphics</p>
-                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
-                <div class="flex items-center justify-center">
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-discord text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-instagram text-4xl"></a></button>
-                </div>
-            </div>
-            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
-                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Jakub Holub">
-                </div>
-                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Jakub Holub</p>  
-                <p class="text-center mb-3">Head organizer & Management</p>
-                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
-                <div class="flex items-center justify-center">
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-discord text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-instagram text-4xl"></a></button>
-                </div>
-            </div>
-            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
-                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Jakub Němčík">
-                </div>
-                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Jakub Němčík</p>  
-                <p class="text-center mb-3">Content creator & Graphics</p>
-                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
-                <div class="flex items-center justify-center">
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-discord text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-instagram text-4xl"></a></button>
-                </div>
-            </div>
-            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
-                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Daniel Tomis">
-                </div>
-                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Daniel Tomis</p>  
-                <p class="text-center mb-3">Programmer & Data analyst</p>
-                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
-                <div class="flex items-center justify-center">
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-discord text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-instagram text-4xl"></a></button>
-                </div>
-            </div>
-            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
-                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Alexandr Chovanec">
-                </div>
-                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">Alexandr Chovanec</p>  
-                <p class="text-center mb-3">Hardware & 3D Modeling</p>
-                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
-                <div class="flex items-center justify-center">
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-discord text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-instagram text-4xl"></a></button>
-                </div>
-            </div>
-            <div class="relative w-72 rounded-lg p-4 mt-20 ml-6 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
-                <div class="w-36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="David Oprštěný">
-                </div>
-                <p class="mt-20 text-center text-lg font-bold underline decoration-yellow-400">David Oprštěný</p>  
-                <p class="text-center mb-3">Programmer</p>
-                <p class="text-center mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
-                <div class="flex items-center justify-center">
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-github text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-discord text-4xl"></a></button>
-                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" class="fab fa-instagram text-4xl"></a></button>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="text-white" id="cansat">
-        <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400">Co je to CanSat?</h1>
+        <h1 class="font-bold text-xl text-center pt-20 my-5 underline decoration-yellow-400">Co je to CanSat?</h1>
         <p class="text-md text-center w-3/4 mx-auto">Soutěž pořádána vzdělávacím oddělením ESA (European Space Agency). Každý tým má za úkol sestavit “satelit” o velikosti i tvaru plechovky.<br>
             Tím pádem se do této plechovky musí vlézt všechný základní komponenty satelitu, senzory, řídící jednotky a baterie což dokáže být opravdu výzva!<br>
             Úkol každého tým je splnit dvě mise. Jednu danou pořadately, druhou si musí sami vymyslet.</p>
     </div>
-    <div class="text-white" id="mission">
-        <h1 class="font-bold text-xl text-center my-5 underline decoration-yellow-400">Naše mise</h1>
+    <section class="relative text-white" id="team">
+        <h1 class="font-bold text-xl text-center pt-16 pb-5 underline decoration-yellow-400">Náš tým</h1>
+        <p class="pb-6 text-center w-3/4 mx-auto md:w-1/2">Jsme šestičelnný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
+    </section>
+    <section class="relative text-white">
+        <div class="swiper mySwiper container w-[60rem] flex items-center justify-center flex-wrap pt-10 pl-4 relative">
+          <div class="swiper-wrapper content">
+    
+            <div class="swiper-slide card relative w-72 rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+              <div class="card-content">
+                <div class="image -36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
+                </div>
+    
+                <div class="name-profession">
+                  <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Jakub Holub</p>
+                  <p class="profession text-center mb-3">Head organizer & Management</p>
+                  <p class="text-center mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                </div>
+    
+                <div class="flex items-center justify-center">
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://github.com/HenyPotter" target="_blank" class="fab fa-github text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
+                    <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://www.instagram.com/holubkuba/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide card relative w-72 rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="card-content">
+                  <div class="image -36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                    <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
+                  </div>
+      
+                  <div class="name-profession">
+                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>
+                    <p class="profession text-center mb-3">Web Developer</p>
+                    <p class="text-center mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                  </div>
+      
+                  <div class="flex items-center justify-center">
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://github.com/Maraxen0" target="_blank" class="fab fa-github text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://www.discordapp.com/users/550030603215437824" target="_blank" class="fab fa-discord text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://www.instagram.com/havel_xd/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card relative w-72 rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="card-content">
+                  <div class="image -36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                    <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
+                  </div>
+      
+                  <div class="name-profession">
+                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Alexandr Chovanec</p>
+                    <p class="profession text-center mb-3">Hardware & 3D Modeling</p>
+                    <p class="text-center mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                  </div>
+      
+                  <div class="flex items-center justify-center">
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://github.com/Knedllll" target="_blank" class="fab fa-github text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" target="_blank" class="fab fa-discord text-4xl "></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://www.instagram.com/alexandr_chovanec/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card relative w-72 rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="card-content">
+                  <div class="image -36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                    <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
+                  </div>
+      
+                  <div class="name-profession">
+                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Jakub Němčík</p>
+                    <p class="profession text-center mb-3">Web Developer</p>
+                    <p class="text-center mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                  </div>
+      
+                  <div class="flex items-center justify-center">
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://github.com/bussysmeller" target="_blank" class="fab fa-github text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://www.instagram.com/_nemcikjakub/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card relative w-72 rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="card-content">
+                  <div class="image -36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                    <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
+                  </div>
+      
+                  <div class="name-profession">
+                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">David Oprštěný</p>
+                    <p class="profession text-center mb-3">Programmer</p>
+                    <p class="text-center mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                  </div>
+      
+                  <div class="flex items-center justify-center">
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://github.com/dejvidos625" target="_blank" class="fab fa-github text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide card relative w-72 rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
+                <div class="card-content">
+                  <div class="image -36 h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
+                    <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Prokop Havlík">
+                  </div>
+      
+                  <div class="name-profession">
+                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Daniel Tomis</p>
+                    <p class="profession text-center mb-3">Programmer & Data analyst</p>
+                    <p class="text-center mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus pariatur ipsum at iste dolores corrupti tenetur impedit, debitis qui, quia in dolore nihil. Tempore autem deserunt ipsum commodi culpa dignissimos.</p>
+                  </div>
+      
+                  <div class="flex items-center justify-center">
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://github.com/MorssEXE" target="_blank" class="fab fa-github text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
+                      <button class="mt-3 ml-2 h-11 hover:text-yellow-400"><a href="https://www.instagram.com/dannytomis/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+        </div>
+    
+        <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+      </section>
+    <div class="text-white h-[60vh]" id="mission">
+        <h1 class="font-bold text-xl text-center mb-5 mt-10 underline decoration-yellow-400">Naše mise</h1>
         <p class="text-md text-center w-3/4 mx-auto">Primární mise je jasně daná, jejím cílem je měřit předem vybrané parametry okolního prostředí a jednou za sekundu odesílat data do pozemní stanice. Těmito parametry jsou teplota vzduchu a atmosférický tlak. Tato získaná data musí být každý tým schopen analyzovat a v nějaké formě prezentovat.</p>
         <br>
         <p class="text-md text-center w-3/4 mx-auto pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku.
-            My jsme se při výběru naší mise zaměřili na technický pokrok. Cílem naší mise je postavit CanSat, který bude schopen řízeného přistání.</p>
+            </p>
     </div>
-
-    <script src="index.js"></script>
+    <footer class="text-white bg-gray-900">
+      <div class="flex flex-col md:flex-row md:mx-0 mx-5 justify-around py-4">
+        <div class="flex flex-col">
+          <h4 class="underline decoration-yellow-400 text-xl">Sociální sítě</h4>
+          <ul class="list-inside list-none">
+            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="https://github.com/SARFAD" target="_blank" class="fab fa-github text-xl"><a href="https://github.com/SARFAD" target="_blank"> Github</a></a></li>
+            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="#" target="_blank" class="fab fa-instagram text-xl"><a href="#" target="_blank"> Instagram</a></a></li>
+            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="#" target="_blank" class="fab fa-tiktok text-xl"> <a href="#" target="_blank"> TikTok</a></a> </li>
+            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="#" target="_blank" class="fab fa-youtube text-xl"> <a href="#" target="_blank"> YouTube</a></a></li>
+            <li class=" hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="#" target="_blank" class="fab fa-twitter text-xl"><a href="#" target="_blank"> Twitter</a></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="underline decoration-yellow-400 text-xl">Užitečné odkazy</h4>
+          <ul class="list-inside list-none">
+            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="https://esero.spaceacademy.cz/projekty/cansat/" target="_blank" class=""> CanSat</a></li>
+            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 y-2 cursor-pointer"><a href="https://pojfm.cz" target="_blank" class=""> POJFM</a></li>
+          
+        </div>
+        <div class="underline decoration-yellow-400 text-xl">
+          Kontakt
+        </div>
+      </div>
+      <div class="text-center text-gray-400 py-1"> 
+        <p>&copy SARFAD 2022</p>
+      </div>
+    </footer>
+    
+      <script src="index.js"></script>
 </body>
-</html> 
+</html>
