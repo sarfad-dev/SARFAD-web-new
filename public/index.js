@@ -1,9 +1,6 @@
 document.querySelector('#burger').addEventListener('click', () => {
     document.querySelector('#menu').classList.toggle('hidden');
 });
-const mediaQuery = window.matchMedia('(min-width: 768px)')
-
-if (mediaQuery.matches) {
 
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -61,4 +58,3 @@ if (mediaQuery.matches) {
     observer: true,  
     observeParents: true,
   });
-}
