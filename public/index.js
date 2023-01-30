@@ -37,6 +37,7 @@ if (mediaQuery.matches) {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+      touchable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
