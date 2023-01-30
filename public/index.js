@@ -13,6 +13,8 @@ if (mediaQuery.matches) {
     loopFillGroupWithBlank: false,
     grabCursor: true,
     centerSlide: true,
+    observer: true,
+    observeParents: true,
     breakpoints: {
         600:{
           slidesPerView: 2,
@@ -22,6 +24,8 @@ if (mediaQuery.matches) {
           loopFillGroupWithBlank: false,
           grabCursor: true,
           centerSlide: true,
+          observer: true,
+          observeParents: true,
         },
         630:{
           slidesPerView: 2,
@@ -31,6 +35,8 @@ if (mediaQuery.matches) {
           loopFillGroupWithBlank: true,
           grabCursor: true,
           centerSlide: true,
+          observer: true,
+          observeParents: true,
         },
         815: {
           slidesPerView: 3,
@@ -40,6 +46,8 @@ if (mediaQuery.matches) {
           loopFillGroupWithBlank: true,
           grabCursor: true,
           centerSlide: true,
+          observer: true,
+          observeParents: true,
         },
     },
     pagination: {
