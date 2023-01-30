@@ -11,6 +11,8 @@ if (mediaQuery.matches) {
     slidesPerGroup: 1,
     loop: false,
     loopFillGroupWithBlank: false,
+    grabCursor: true,
+    centerSlide: true,
     breakpoints: {
         600:{
           slidesPerView: 2,
@@ -18,6 +20,8 @@ if (mediaQuery.matches) {
           slidesPerGroup: 2,
           loop: false,
           loopFillGroupWithBlank: false,
+          grabCursor: true,
+          centerSlide: true,
         },
         630:{
           slidesPerView: 2,
@@ -25,19 +29,22 @@ if (mediaQuery.matches) {
           slidesPerGroup: 2,
           loop: true,
           loopFillGroupWithBlank: true,
+          grabCursor: true,
+          centerSlide: true,
         },
         815: {
           slidesPerView: 3,
           spaceBetween: 20,
           slidesPerGroup: 3,
           loop: false,
-        loopFillGroupWithBlank: true,
+          loopFillGroupWithBlank: true,
+          grabCursor: true,
+          centerSlide: true,
         },
     },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      touchable: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
