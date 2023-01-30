@@ -15,9 +15,11 @@ module.exports = {
         }
       },
       screens: {
-        'xs': {"max": '475px'},
-        // => @media (max-width: 475px) { ... }
-        }
+        'xs': {"min": '600px'},
+        // => @media (min-width: 600px) { ... }
+        'ne': {"min": '815px'},
+        // => @media (min-width: 815px) { ... }
+        },
     },
   },
   plugins: [],
