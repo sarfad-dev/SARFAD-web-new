@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities{
+    .stroke-text{
+        -webkit-text-stroke: 1px rgb(20, 20, 20);
+    }
+    .stroke-text-small{
+        -webkit-text-stroke: 0.2px rgb(20, 20, 20);
+    }
+    
+ }

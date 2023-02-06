@@ -35,7 +35,7 @@
 <body class="font-poppins bg-background-200 box-border m-0 p-0">
     <div id="home">
         <div>
-            <nav class="h-14 bg-black/50 backdrop-blur-sm font-poppins flex items-center fixed z-10 top-0 left-0 right-0 ">
+            <nav class="h-14 bg-black/50 backdrop-blur-sm font-poppins flex items-center fixed z-20 top-0 left-0 right-0 ">
             <div class="flex justify-end items-center">
                 <div class="">
                     <img class="w-20" src="images/Sarfad_Logo_no_bg.webp" alt="SARFAD (logo)">
@@ -52,12 +52,12 @@
                         </a>
                     </li>
                     <li class="mr-6">
-                        <a href="#team">
+                        <a href="#cansat">
                           <span class="hover:underline hover:decoration-yellow-400">CanSat</span>
                         </a>
                     </li>
                     <li class="mr-6">
-                        <a href="#cansat">
+                        <a href="#team">
                             <span class="hover:underline hover:decoration-yellow-400">Náš tým</span>
                         </a>
                     </li>
@@ -66,13 +66,18 @@
                             <span class="hover:underline hover:decoration-yellow-400">Naše mise</span>
                         </a>
                     </li>
+                    <li class="mr-6">
+                      <a href="#sponsors">
+                          <span class="hover:underline hover:decoration-yellow-400">Sponzoři</span>
+                      </a>
+                  </li>
                 </ul>
             </nav>
         </div> <!--end nav-->
         <div class="min-h-screen bg-cover bg-center flex flex-col items-center pb-10 text-white text stroke-sky-500" style="background-image: url('images/bg.webp'); -webkit-text-stroke: 0.05rem ;" >
-                <h1 class="font-bold mt-56 text-7xl drop-shadow-2xl">SARFAD</h1>
-                <h2 class="text-lg mt-10 mx-5 drop-shadow-lg">POJ-FM CANSAT TEAM 2022</h2>
-                <a class="text-lg rounded-full border-2 border-white p-2 mt-10 cursor-pointer hover:text-gray-100 hover:border-gray-100" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
+                <h1 class="font-bold mt-56 text-7xl drop-shadow-2xl stroke-text ;">SARFAD</h1>
+                <h2 class="text-lg mt-10 mx-5 drop-shadow-lg stroke-text-sm">POJ-FM CANSAT TEAM 2022</h2>
+                <a class="text-lg rounded-full border-2 border-white p-2 mt-10 cursor-pointer hover:text-gray-100 hover:border-gray-100 stroke-text-sm" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
         </div>
     </div>
     <div class="text-white" id="cansat">
@@ -210,16 +215,18 @@
         <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
       </section>
-    <div class="text-white h-[60vh]" id="mission">
+    <div class="text-white pt-10" id="mission">
         <h1 class="font-bold text-xl text-center mb-5 mt-10 underline decoration-yellow-400">Naše mise</h1>
         <p class="text-md text-center w-3/4 mx-auto">Primární mise je jasně daná, jejím cílem je měřit předem vybrané parametry okolního prostředí a jednou za sekundu odesílat data do pozemní stanice. Těmito parametry jsou teplota vzduchu a atmosférický tlak. Tato získaná data musí být každý tým schopen analyzovat a v nějaké formě prezentovat.</p>
         <br>
-        <p class="text-md text-center w-3/4 mx-auto pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku.
-            </p>
+        <p class="text-md text-center w-3/4 mx-auto pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku. </p>
     </div>
+    <section class="text-white pt-10" id="sponsors">
+      <h1 class="font-bold text-xl text-center mb-5 mt-10 underline decoration-yellow-400">Sponzoři</h1>
+    </section>
     <footer class="text-white bg-gray-900">
-      <div class="flex flex-col md:flex-row md:mx-0 mx-5 justify-around py-4">
-        <div class="flex flex-col">
+      <div class="flex flex-col md:flex-row justify-around py-4">
+        <div class="flex-col hidden md:flex ">
           <h4 class="underline decoration-yellow-400 text-xl">Sociální sítě</h4>
           <ul class="list-inside list-none">
             <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="https://github.com/SARFAD" target="_blank" class="fab fa-github text-xl"><a href="https://github.com/SARFAD" target="_blank"> Github</a></a></li>
@@ -229,16 +236,20 @@
             <li class=" hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="#" target="_blank" class="fab fa-twitter text-xl"><a href="#" target="_blank"> Twitter</a></a></li>
           </ul>
         </div>
-        <div>
+        <div class="hidden md:block ">
           <h4 class="underline decoration-yellow-400 text-xl">Užitečné odkazy</h4>
           <ul class="list-inside list-none">
             <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a href="https://esero.spaceacademy.cz/projekty/cansat/" target="_blank" class=""> CanSat</a></li>
             <li class="hover:text-gray-200 hover:underline decoration-yellow-400 y-2 cursor-pointer"><a href="https://pojfm.cz" target="_blank" class=""> POJFM</a></li>
-          
         </div>
-        <div class="underline decoration-yellow-400 text-xl">
-          Kontakt
-        </div>
+        <form action="https://formsubmit.co/social@sarfad.tech" method="POST" class=" flex flex-col mx-auto md:mx-0 text-black">
+          <h3 class="underline decoration-yellow-400 text-xl mb-2 text-white mx-auto md:mx-0">Kontakt</h3>
+          <input type="hidden" name="_captcha" value="false">
+          <input class="mb-2" type="email" name="email" placeholder="Email" required>
+          <textarea class="mb-2" name="message" rows="4" placeholder="Message"required> </textarea>
+          <input type="hidden" name="_next" value="https://sarfad.tech">
+          <button class="rounded-3xl bg-yellow-400" type="submit">Poslat</button>
+        </form>
       </div>
       <div class="text-center text-gray-400 py-1"> 
         <p>&copy SARFAD 2022</p>
@@ -246,5 +257,6 @@
     </footer>
     
       <script src="index.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 </html>
