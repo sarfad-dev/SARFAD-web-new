@@ -58,16 +58,3 @@ document.querySelector('#burger').addEventListener('click', () => {
     observer: true,  
     observeParents: true,
   });
-function sendEmail(){
-  Email.send({
-      Host : "smtp.gmail.com",
-      Username : "havlik.prokop@gmail.com",
-      Password : "Pepa123",
-      To : 'maraxencz1097@gmail.com',
-      From : document.getElementById("email").value,
-      Subject : "New cotasd",
-      Body : "And this is the body"
-  }).then(
-    message => alert(message)
-  );
-}
