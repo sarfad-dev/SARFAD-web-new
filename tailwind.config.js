@@ -12,7 +12,8 @@ module.exports = {
         background: {
         100: "#192a3b",
         200: "#162535;",
-        }
+        },
+        'transparent': 'rgba(0, 0, 0, 0.2)'
       },
       screens: {
         'xs': {"min": '600px'},
