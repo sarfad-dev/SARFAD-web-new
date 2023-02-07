@@ -736,6 +736,10 @@ video {
   flex-wrap: wrap;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1012,6 +1016,10 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
+
   .md\:mx-0{
     margin-left: 0px;
     margin-right: 0px;
@@ -1037,8 +1045,20 @@ video {
     flex-direction: row;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
+  .md\:justify-start{
+    justify-content: flex-start;
+  }
+
   .md\:justify-center{
     justify-content: center;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 }
 
