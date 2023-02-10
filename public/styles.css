@@ -8,7 +8,25 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #c8c4c4; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #706e6e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 *,
 ::before,
 ::after {
@@ -782,7 +800,7 @@ video {
 }
 
 .bg-background-200{
-  background-color: #162535;;
+  background-color: #162535;
 }
 
 .bg-black\/50{
