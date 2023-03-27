@@ -17,18 +17,21 @@
         vertical-align: top;
         margin-right: 20px;
       }
-
+      /*
     .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover, .card7:hover   {
         cursor: pointer;
         transform: rotateY(180deg);
       }
+      */
 
       .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
         height: 100%;
         width: 100%;
         position: relative;
+        /*
         transition: transform 1500ms;
         transform-style: preserve-3d;
+        */
       }
 
       .front,
@@ -41,10 +44,12 @@
         backface-visibility: hidden;
         background-color: rgb(25 42 59);
       }
+      /*
       .back {
         transform: rotateY(180deg);
 
         text-align: center;
         
       }
+      */
   }
