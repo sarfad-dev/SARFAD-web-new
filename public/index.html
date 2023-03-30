@@ -31,11 +31,11 @@
     <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
 </head>
-<body class="font-poppins bg-background-200 box-border m-0 p-0">
+<body class="box-border p-0 m-0 font-poppins bg-background-200">
     <div id="home">
         <div>
-            <nav class="h-14 bg-black/50 backdrop-blur-sm font-poppins flex items-center fixed z-20 top-0 left-0 right-0 ">
-            <div class="flex justify-end items-center">
+            <nav class="fixed top-0 left-0 right-0 z-20 flex items-center h-14 bg-black/50 backdrop-blur-sm font-poppins ">
+            <div class="flex items-center justify-end">
                 <div class="">
                     <img class="w-20" src="images/Sarfad_Logo_no_bg.webp" alt="SARFAD (logo)">
                 </div>
@@ -44,7 +44,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>                      
                 </div>
             </div>
-                <ul class="md:flex md:justify-center px-2 text-white hidden" id="menu">
+                <ul class="hidden px-2 text-white md:flex md:justify-center" id="menu">
                     <li class="mr-6">
                         <a aria-label="home" href="#home">
                             <span class="hover:underline hover:decoration-yellow-400">Home</span>
@@ -73,21 +73,21 @@
                 </ul>
             </nav>
         </div> <!--end nav-->
-        <div class="min-h-screen bg-cover bg-center flex flex-col items-center justify-center pb-10 text-white stroke-sky-500" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('images/bg.webp');" >
+        <div class="flex flex-col items-center justify-center min-h-screen pb-10 text-white bg-center bg-cover stroke-sky-500" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('images/bg.webp');" >
                 <h1 class="font-bold text-7xl drop-shadow-2xl">SARFAD</h1>
-                <h2 class="text-lg mt-10 mx-5 drop-shadow-lg">POJ-FM CANSAT TEAM 2023</h2>
-                <a aria-label="linktree" class="text-lg rounded-full border-2 border-white p-2 mt-10 cursor-pointer hover:text-gray-100 hover:border-gray-100" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
+                <h2 class="mx-5 mt-10 text-lg drop-shadow-lg">POJ-FM CANSAT TEAM 2023</h2>
+                <a aria-label="linktree" class="p-2 mt-10 text-lg border-2 border-white rounded-full cursor-pointer hover:text-gray-100 hover:border-gray-100" href="https://linktr.ee/sarfadofficial" target="_blank" class="text-white font-poppins">Přidej se k nám</a>
         </div>
     </div>
     <div class="text-white" id="cansat">
-        <h1 class="font-bold text-xl text-center pt-20 my-5 underline decoration-yellow-400">Co je to CanSat?</h1>
-        <p class="text-md text-center w-3/4 mx-auto">Soutěž pořádána vzdělávacím oddělením ESA (European Space Agency). Každý tým má za úkol sestavit “satelit” o velikosti i tvaru plechovky.<br>
+        <h1 class="pt-20 my-5 text-xl font-bold text-center underline decoration-yellow-400">Co je to CanSat?</h1>
+        <p class="w-3/4 mx-auto text-center text-md">Soutěž pořádána vzdělávacím oddělením ESA (European Space Agency). Každý tým má za úkol sestavit “satelit” o velikosti i tvaru plechovky.<br>
             Tím pádem se do této plechovky musí vlézt všechný základní komponenty satelitu, senzory, řídící jednotky a baterie což dokáže být opravdu výzva!<br>
             Úkol každého tým je splnit dvě mise. Jednu danou pořadateli, druhou si musí sami vymyslet.</p>
     </div>
     <section class="relative text-white" id="team">
-        <h1 class="font-bold text-xl text-center pt-16 pb-5 underline decoration-yellow-400">Náš tým</h1>
-        <p class="pb-6 text-center w-3/4 mx-auto md:w-1/2">Jsme šestičlenný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
+        <h1 class="pt-16 pb-5 text-xl font-bold text-center underline decoration-yellow-400">Náš tým</h1>
+        <p class="w-3/4 pb-6 mx-auto text-center md:w-1/2">Jsme šestičlenný tým studentů ze střední průmyslové školy POJ-FM. Jak už název naznačuje škola se náchází ve Frýdku Místku. Do soutěže jsme se přihlásili, protože jsme ji viděl jako rozumný zdroj motivaci pro zlepšení svých znalostí. </p>
     </section>
     <section class="relative text-white">
         <div class="swiper mySwiper container max-w-[20rem] xs:max-w-[35rem] ne:max-w-[60rem] flex items-center justify-center flex-wrap pt-10 relative">
@@ -96,19 +96,19 @@
             <div class="swiper-slide card max-w-[20em] relative rounded-lg p-4 mt-20 flex flex-col justify-center items-center bg-background-100 shadow-lg shadow-zinc-900">
               <div class="card-content">
                 <div class="image max-w-36 max-h-36 rounded-[50%] overflow-hidden absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-xl shadow-zinc-800">
-                  <img class="w-full scale-[1.2]" src="images/pfp.webp" alt="Jakub Holub">
+                  <img class="w-full scale-[1.2]" src="images/Jakub_holub.png" alt="Jakub Holub">
                 </div>
     
                 <div class="name-profession">
-                  <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Jakub Holub</p>
-                  <p class="profession text-center mb-3">Head organizer</p>
-                  <p class="text-center mb-3">Rozvrhuje práci ostatním členům týmu a spolupracuje s vedením školy pro podporu našeho Cansatu.</p>
+                  <p class="mt-20 text-lg font-bold text-center underline name decoration-yellow-400">Jakub Holub</p>
+                  <p class="mb-3 text-center profession">Head organizer</p>
+                  <p class="mb-3 text-center">Rozvrhuje práci ostatním členům týmu a spolupracuje s vedením školy pro podporu našeho Cansatu.</p>
                 </div>
     
                 <div class="flex items-center justify-center">
-                    <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/HenyPotter" target="_blank" class="fab fa-github text-4xl"></a></button>
-                    <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
-                    <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/holubkuba/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                    <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/HenyPotter" target="_blank" class="text-4xl fab fa-github"></a></button>
+                    <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="text-4xl fab fa-discord"></a></button>
+                    <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/holubkuba/" target="_blank" class="text-4xl fab fa-instagram"></a></button>
                 </div>
               </div>
             </div>
@@ -119,15 +119,15 @@
                   </div>
       
                   <div class="name-profession">
-                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Prokop Havlík</p>
-                    <p class="profession text-center mb-3">Web Developer</p>
-                    <p class="text-center mb-3 ">Vytváří všechny weby, které souvisí s našim Cansat týmem. Navrhuje, konzultuje a poté i realizuje!</p>
+                    <p class="mt-20 text-lg font-bold text-center underline name decoration-yellow-400">Prokop Havlík</p>
+                    <p class="mb-3 text-center profession">Web Developer</p>
+                    <p class="mb-3 text-center ">Vytváří všechny weby, které souvisí s našim Cansat týmem. Navrhuje, konzultuje a poté i realizuje!</p>
                   </div>
       
                   <div class="flex items-center justify-center">
-                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/Maraxen0" target="_blank" class="fab fa-github text-4xl"></a></button>
-                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="https://www.discordapp.com/users/550030603215437824" target="_blank" class="fab fa-discord text-4xl"></a></button>
-                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/havel_xd/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/Maraxen0" target="_blank" class="text-4xl fab fa-github"></a></button>
+                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="https://www.discordapp.com/users/550030603215437824" target="_blank" class="text-4xl fab fa-discord"></a></button>
+                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/havel_xd/" target="_blank" class="text-4xl fab fa-instagram"></a></button>
                   </div>
                 </div>
               </div>
@@ -138,15 +138,15 @@
                   </div>
       
                   <div class="name-profession">
-                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Alexandr Chovanec</p>
-                    <p class="profession text-center mb-3">Safe landing & Parachute</p>
-                    <p class="text-center mb-3 ">Zabezpečuje Cansat i vejce před rozbitím. Hladké přistání je totiž hlavním motivem naší sekundární mise.</p>
+                    <p class="mt-20 text-lg font-bold text-center underline name decoration-yellow-400">Alexandr Chovanec</p>
+                    <p class="mb-3 text-center profession">Safe landing & Parachute</p>
+                    <p class="mb-3 text-center ">Zabezpečuje Cansat i vejce před rozbitím. Hladké přistání je totiž hlavním motivem naší sekundární mise.</p>
                   </div>
       
                   <div class="flex items-center justify-center">
-                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/Knedllll" target="_blank" class="fab fa-github text-4xl"></a></button>
-                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="fab fa-discord text-4xl "></a></button>
-                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/alexandr_chovanec/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/Knedllll" target="_blank" class="text-4xl fab fa-github"></a></button>
+                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="text-4xl fab fa-discord "></a></button>
+                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/alexandr_chovanec/" target="_blank" class="text-4xl fab fa-instagram"></a></button>
                   </div>
                 </div>
               </div>
@@ -157,15 +157,15 @@
                   </div>
       
                   <div class="name-profession">
-                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Jakub Němčík</p>
-                    <p class="profession text-center mb-3">Public relations & Social media</p>
-                    <p class="text-center mb-3 ">Vyřizuje spolupráce, a též vytváří obsah na sociální sítě pro nejlepší prezentování našeho projektu veřejnosti.</p>
+                    <p class="mt-20 text-lg font-bold text-center underline name decoration-yellow-400">Jakub Němčík</p>
+                    <p class="mb-3 text-center profession">Public relations & Social media</p>
+                    <p class="mb-3 text-center ">Vyřizuje spolupráce, a též vytváří obsah na sociální sítě pro nejlepší prezentování našeho projektu veřejnosti.</p>
                   </div>
       
                   <div class="flex items-center justify-center">
-                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/bussysmeller" target="_blank" class="fab fa-github text-4xl"></a></button>
-                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
-                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/_nemcikjakub/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/bussysmeller" target="_blank" class="text-4xl fab fa-github"></a></button>
+                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="text-4xl fab fa-discord"></a></button>
+                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/_nemcikjakub/" target="_blank" class="text-4xl fab fa-instagram"></a></button>
                   </div>
                 </div>
               </div>
@@ -176,15 +176,15 @@
                   </div>
       
                   <div class="name-profession">
-                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">David Oprštěný</p>
-                    <p class="profession text-center mb-3">Secondary module developer</p>
-                    <p class="text-center mb-3 ">Snaží se o bezpečné vypuštění, a rovněž i o následnou správnost měření informací o sekundárním modulu s vejcem.</p>
+                    <p class="mt-20 text-lg font-bold text-center underline name decoration-yellow-400">David Oprštěný</p>
+                    <p class="mb-3 text-center profession">Secondary module developer</p>
+                    <p class="mb-3 text-center ">Snaží se o bezpečné vypuštění, a rovněž i o následnou správnost měření informací o sekundárním modulu s vejcem.</p>
                   </div>
       
                   <div class="flex items-center justify-center">
-                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/dejvidos625" target="_blank" class="fab fa-github text-4xl"></a></button>
-                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
-                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/davidos_photography/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/dejvidos625" target="_blank" class="text-4xl fab fa-github"></a></button>
+                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="text-4xl fab fa-discord"></a></button>
+                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/davidos_photography/" target="_blank" class="text-4xl fab fa-instagram"></a></button>
                   </div>
                 </div>
               </div>
@@ -195,15 +195,15 @@
                   </div>
       
                   <div class="name-profession">
-                    <p class="name mt-20 text-center text-lg font-bold underline decoration-yellow-400">Daniel Tomis</p>
-                    <p class="profession text-center mb-3">Main programmer</p>
-                    <p class="text-center mb-3 ">Navrhuje a implementuje velkou část kódu, s cílem zařídit symbiózu mezi jednotlivými součástkami.</p>
+                    <p class="mt-20 text-lg font-bold text-center underline name decoration-yellow-400">Daniel Tomis</p>
+                    <p class="mb-3 text-center profession">Main programmer</p>
+                    <p class="mb-3 text-center ">Navrhuje a implementuje velkou část kódu, s cílem zařídit symbiózu mezi jednotlivými součástkami.</p>
                   </div>
       
                   <div class="flex items-center justify-center">
-                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/MorssEXE" target="_blank" class="fab fa-github text-4xl"></a></button>
-                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="fab fa-discord text-4xl"></a></button>
-                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/dannytomis/" target="_blank" class="fab fa-instagram text-4xl"></a></button>
+                      <button name="github" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="github" href="https://github.com/MorssEXE" target="_blank" class="text-4xl fab fa-github"></a></button>
+                      <button name="discord" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="discord" href="#" target="_blank" class="text-4xl fab fa-discord"></a></button>
+                      <button name="instagram" class="mt-3 ml-2 h-11 hover:text-yellow-400"><a aria-label="instagram" href="https://www.instagram.com/dannytomis/" target="_blank" class="text-4xl fab fa-instagram"></a></button>
                   </div>
                 </div>
               </div>
@@ -214,93 +214,93 @@
         <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
       </section>
-    <div class="text-white pt-10" id="mission">
-        <h1 class="font-bold text-xl text-center mb-5 mt-10 underline decoration-yellow-400">Naše mise</h1>
-        <p class="text-md text-center w-3/4 mx-auto">Primární mise je jasně daná, jejím cílem je změřit předem vybrané parametry okolního prostředí a každou sekundu je posílat do pozemní stanice, kde se budou zobrazovat v grafech. Těmito parametry jsou teplota vzduchu a atmosférický tlak.</p>
+    <div class="pt-10 text-white" id="mission">
+        <h1 class="mt-10 mb-5 text-xl font-bold text-center underline decoration-yellow-400">Naše mise</h1>
+        <p class="w-3/4 mx-auto text-center text-md">Primární mise je jasně daná, jejím cílem je změřit předem vybrané parametry okolního prostředí a každou sekundu je posílat do pozemní stanice, kde se budou zobrazovat v grafech. Těmito parametry jsou teplota vzduchu a atmosférický tlak.</p>
         <br>
-        <p class="text-md text-center w-3/4 mx-auto pb-5">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku. My jsme si jako cíl sekundární mise určili vypustit vejce, které následně pomocí padáku přistane bez porušení skořápky.</p>
+        <p class="w-3/4 pb-5 mx-auto text-center text-md">Sekundární misi si každý tým určuje sám a tato mise musí dosáhnout určitého technologického, inovativního či vědeckého pokroku. My jsme si jako cíl sekundární mise určili vypustit vejce, které následně pomocí padáku přistane bez porušení skořápky.</p>
     </div>
-    <section class="text-white pt-10" id="sponsors">
-      <h1 class="font-bold text-xl text-center mb-5 mt-10 underline decoration-yellow-400">Sponzoři</h1>
-      <p class="text-md text-center w-3/4 mx-auto">Chcete podpořit náš projekt? Napište nám na <a aria-label="email" href="mailto:social@sarfad.tech" class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer" target="_blank"> social@sarfad.tech</a></p>
+    <section class="pt-10 text-white" id="sponsors">
+      <h1 class="mt-10 mb-5 text-xl font-bold text-center underline decoration-yellow-400">Sponzoři</h1>
+      <p class="w-3/4 mx-auto text-center text-md">Chcete podpořit náš projekt? Napište nám na <a aria-label="email" href="mailto:social@sarfad.tech" class="py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400" target="_blank"> social@sarfad.tech</a></p>
       <br>
       <br> 
-      <div class="w-3/4 mb-20 mx-auto flex flex-col flex-wrap md:flex-row justify-center items-center md:items-start">
-      <div class="container1 mt-5">
-        <div class="card1 m-2">
-          <a href="https://pojfm.cz" target="_blank"><div class="front flex justify-center items-center">
-            <img src="images/POJFM.webp" alt="POJ-FM" class="w-full scale-[0.8]"></div></a><!--
+      <div class="flex flex-col flex-wrap items-center justify-center w-3/4 mx-auto mb-20 md:flex-row md:items-start">
+      <div class="mt-5 container1">
+        <div class="m-2 card1">
+          <a href="https://pojfm.cz" target="_blank"><div class="flex items-center justify-center front">
+            <img src="images/pojfm.webp" alt="POJ-FM" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">POJ-FM</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">POJ-FM</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://pojfm.cz" class="fas fa-globe fa-lg"></a></button>
           </div>
         -->
         </div>
       </div>
-      <div class="container2 mt-5">
-        <div class="card2 m-2">
-          <a href="https://paspal.space" target="_blank"><div class="front flex justify-center items-center">
+      <div class="mt-5 container2">
+        <div class="m-2 card2">
+          <a href="https://paspal.space" target="_blank"><div class="flex items-center justify-center front">
           <img src="images/PASPAL.webp" alt="PASPAL" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">PASPAL</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">PASPAL</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://paspal.space" class="fas fa-globe fa-lg"></a></button>
           </div>
           -->
       </div>
       </div>
-      <div class="container3 mt-5">
-        <div class="card3 m-2">
-          <a href="https://drip-eco.com" target="_blank"><div class="front flex justify-center items-center">
+      <div class="mt-5 container3">
+        <div class="m-2 card3">
+          <a href="https://drip-eco.com" target="_blank"><div class="flex items-center justify-center front">
           <img src="images/DRIP.webp" alt="DRIP" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">DRIP</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">DRIP</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://drip-eco.com" class="fas fa-globe fa-lg"></a></button>
           </div>-->
       </div>
       </div>
-      <div class="container4 mt-5">
-        <div class="card4 m-2">
-          <a href="https://dratek.cz" target="_blank"><div class="front flex justify-center items-center">
+      <div class="mt-5 container4">
+        <div class="m-2 card4">
+          <a href="https://dratek.cz" target="_blank"><div class="flex items-center justify-center front">
           <img src="images/dratek.webp" alt="Drátek.cz" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">Drátek.cz</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">Drátek.cz</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://dratek.cz" class="fas fa-globe fa-lg"></a></button>
           </div>-->
       </div>
       </div>
-      <div class="container5 mt-5">
-        <div class="card5 m-2">
-          <a href="https://www.svetsoucastek.cz" target="_blank"><div class="front flex justify-center items-center">
+      <div class="mt-5 container5">
+        <div class="m-2 card5">
+          <a href="https://www.svetsoucastek.cz" target="_blank"><div class="flex items-center justify-center front">
           <img src="images/svet_soucastek.webp" alt="SvětSoučástek.cz" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">SvětSoučástek.cz</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">SvětSoučástek.cz</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://www.svetsoucastek.cz" class="fas fa-globe fa-lg"></a></button>
           </div>-->
       </div>
       </div>
-      <div class="container6 mt-5">
-        <div class="card6 m-2">
-          <a href="https://www.vyrobareklamy.info" target="_blank"><div class="front flex justify-center items-center">
+      <div class="mt-5 container6">
+        <div class="m-2 card6">
+          <a href="https://www.vyrobareklamy.info" target="_blank"><div class="flex items-center justify-center front">
           <img src="images/vyroba_reklamy.webp" alt="" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">Výroba Reklamy</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">Výroba Reklamy</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://www.vyrobareklamy.info" class="fas fa-globe fa-lg"></a></button>
             <i class="fa-sharp fa-solid fa-browser"></i>
           </div>-->
       </div>
       </div>
-      <div class="container7 mt-5">
-        <div class="card7 m-2">
-          <a href="https://www.fv-plast.cz" target="_blank"><div class="front flex justify-center items-center">
+      <div class="mt-5 container7">
+        <div class="m-2 card7">
+          <a href="https://www.fv-plast.cz" target="_blank"><div class="flex items-center justify-center front">
           <img src="images/fv_plast.webp" alt="FV - Plast" class="w-full scale-[0.8]"></div></a><!--
           <div class="back">
-            <h1 class="pt-5 underline decoration-yellow-400 font-bold text-xl">FV - Plast</h1>
+            <h1 class="pt-5 text-xl font-bold underline decoration-yellow-400">FV - Plast</h1>
             <p class="p-2">Additional info on the back of the card</p>
             <button><a aria-label="sponsor" target="_blank" href="https://www.fv-plast.cz" class="fas fa-globe fa-xl"></a></button>
           </div>
@@ -311,34 +311,34 @@
       
     </section>
     <footer class="text-white bg-gray-900">
-      <div class="relative md:flex md:flex-row justify-around py-4">
-        <div class="flex-col flex mx-auto md:mx-0">
-          <h3 class="underline decoration-yellow-400 text-xl text-center md:text-left">Sociální sítě</h3>
-          <ul class="list-inside list-none">
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer flex items-center justify-center md:relative md:justify-start md:items-start "><a aria-label="github" href="https://github.com/SARFAD" target="_blank" class="fab fa-github text-xl mr-1"><a href="https://github.com/SARFAD" target="_blank"> Github</a></a></li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer flex items-center justify-center md:relative md:justify-start md:items-start"><a aria-label="instagram" href="https://instagram.com/sarfadofficial?igshid=YmMyMTA2M2Y=" target="_blank" class="fab fa-instagram text-xl mr-1"><a href="https://instagram.com/sarfadofficial?igshid=YmMyMTA2M2Y=" target="_blank"> Instagram</a></a></li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer flex items-center justify-center md:relative md:justify-start md:items-start"><a aria-label="tiktok" href="#" target="_blank" class="fab fa-tiktok text-xl mr-1"> <a href="#" target="_blank"> TikTok</a></a> </li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer flex items-center justify-center md:relative md:justify-start md:items-start"><a aria-label="youtube" href="https://www.youtube.com/channel/UCmvF7D_PuLM4LYEy0-C39qA" target="_blank" class="fab fa-youtube text-xl mr-1"> <a href="https://www.youtube.com/channel/UCmvF7D_PuLM4LYEy0-C39qA" target="_blank"> YouTube</a></a></li>
-            <li class=" hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointe flex items-center justify-center md:relative md:justify-start md:items-start"><a aria-label="twitter" href="https://twitter.com/Sarfadofficial?t=paHuAqhp3RE5i5pSEpjfxg&s=09" target="_blank" class="fab fa-twitter text-xl mr-1"><a href="https://twitter.com/Sarfadofficial?t=paHuAqhp3RE5i5pSEpjfxg&s=09" target="_blank"> Twitter</a></a></li>
+      <div class="relative justify-around py-4 md:flex md:flex-row">
+        <div class="flex flex-col mx-auto md:mx-0">
+          <h3 class="text-xl text-center underline decoration-yellow-400 md:text-left">Sociální sítě</h3>
+          <ul class="list-none list-inside">
+            <li class="flex items-center justify-center py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400 md:relative md:justify-start md:items-start "><a aria-label="github" href="https://github.com/SARFAD" target="_blank" class="mr-1 text-xl fab fa-github"><a href="https://github.com/SARFAD" target="_blank"> Github</a></a></li>
+            <li class="flex items-center justify-center py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400 md:relative md:justify-start md:items-start"><a aria-label="instagram" href="https://instagram.com/sarfadofficial?igshid=YmMyMTA2M2Y=" target="_blank" class="mr-1 text-xl fab fa-instagram"><a href="https://instagram.com/sarfadofficial?igshid=YmMyMTA2M2Y=" target="_blank"> Instagram</a></a></li>
+            <li class="flex items-center justify-center py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400 md:relative md:justify-start md:items-start"><a aria-label="tiktok" href="#" target="_blank" class="mr-1 text-xl fab fa-tiktok"> <a href="#" target="_blank"> TikTok</a></a> </li>
+            <li class="flex items-center justify-center py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400 md:relative md:justify-start md:items-start"><a aria-label="youtube" href="https://www.youtube.com/channel/UCmvF7D_PuLM4LYEy0-C39qA" target="_blank" class="mr-1 text-xl fab fa-youtube"> <a href="https://www.youtube.com/channel/UCmvF7D_PuLM4LYEy0-C39qA" target="_blank"> YouTube</a></a></li>
+            <li class="flex items-center justify-center py-2 hover:text-gray-200 hover:underline decoration-yellow-400 cursor-pointe md:relative md:justify-start md:items-start"><a aria-label="twitter" href="https://twitter.com/Sarfadofficial?t=paHuAqhp3RE5i5pSEpjfxg&s=09" target="_blank" class="mr-1 text-xl fab fa-twitter"><a href="https://twitter.com/Sarfadofficial?t=paHuAqhp3RE5i5pSEpjfxg&s=09" target="_blank"> Twitter</a></a></li>
           </ul>
         </div>
         <div class="hidden md:block ">
-          <h3 class="underline decoration-yellow-400 text-xl">Užitečné odkazy</h3>
-          <ul class="list-inside list-none">
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a aria-label="CanSat" href="https://www.esa.int/Education/CanSat" target="_blank" class="fab fa-fly"><a href="https://www.esa.int/Education/CanSat" target="_blank"> Cansat</a></a></li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a aria-label="Esero" href="https://esero.spaceacademy.cz/projekty/cansat/" target="_blank" class="fa-solid fa-satellite"><a href="https://esero.spaceacademy.cz/" target="_blank"> Esero</a></a></li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a aria-label="POJ F≈M" href="https://pojfm.cz/" target="_blank" class="	fas fa-school"><a href="https://pojfm.cz/" target="_blank"> POJ F≈M</a></a></li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer"><a aria-label="Czech Rocket Society" href="https://czechrockets.com/cansat.html" target="_blank" class="	fa-solid fa-shuttle-space"><a href="https://czechrockets.com/cansat.html" target="_blank"> Czech Rocket Society</a></a></li>
-        </div class="flex flex-col mx-auto md:mx-0 text-black">
+          <h3 class="text-xl underline decoration-yellow-400">Užitečné odkazy</h3>
+          <ul class="list-none list-inside">
+            <li class="py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400"><a aria-label="CanSat" href="https://www.esa.int/Education/CanSat" target="_blank" class="fab fa-fly"><a href="https://www.esa.int/Education/CanSat" target="_blank"> Cansat</a></a></li>
+            <li class="py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400"><a aria-label="Esero" href="https://esero.spaceacademy.cz/projekty/cansat/" target="_blank" class="fa-solid fa-satellite"><a href="https://esero.spaceacademy.cz/" target="_blank"> Esero</a></a></li>
+            <li class="py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400"><a aria-label="POJ F≈M" href="https://pojfm.cz/" target="_blank" class=" fas fa-school"><a href="https://pojfm.cz/" target="_blank"> POJ F≈M</a></a></li>
+            <li class="py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400"><a aria-label="Czech Rocket Society" href="https://czechrockets.com/cansat.html" target="_blank" class=" fa-solid fa-shuttle-space"><a href="https://czechrockets.com/cansat.html" target="_blank"> Czech Rocket Society</a></a></li>
+        </div class="flex flex-col mx-auto text-black md:mx-0">
         <div>
-          <h3 class="underline decoration-yellow-400 text-xl text-center md:text-left">Kontakt</h3>
-          <ul class="list-inside list-none">
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer flex items-center justify-center md:relative md:justify-start md:items-start"><span class="fas fa-phone"><span class="font-poppins font-normal"> +420 604 743 313</span></span></li>
-            <li class="hover:text-gray-200 hover:underline decoration-yellow-400 py-2 cursor-pointer flex items-center justify-center md:relative md:justify-start md:items-start"><span class="fas fa-envelope-open"><span class="font-poppins font-normal"> social@sarfad.tech</span></span></li>
-        </div class="flex flex-col mx-auto md:mx-0 text-black">
+          <h3 class="text-xl text-center underline decoration-yellow-400 md:text-left">Kontakt</h3>
+          <ul class="list-none list-inside">
+            <li class="flex items-center justify-center py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400 md:relative md:justify-start md:items-start"><span class="fas fa-phone"><span class="font-normal font-poppins"> +420 604 743 313</span></span></li>
+            <li class="flex items-center justify-center py-2 cursor-pointer hover:text-gray-200 hover:underline decoration-yellow-400 md:relative md:justify-start md:items-start"><span class="fas fa-envelope-open"><span class="font-normal font-poppins"> social@sarfad.tech</span></span></li>
+        </div class="flex flex-col mx-auto text-black md:mx-0">
       </div>
       
-      <div class="text-center text-gray-400 py-1"> 
+      <div class="py-1 text-center text-gray-400"> 
         <p>&copy SARFAD 2023</p>
       </div>
     </footer>
