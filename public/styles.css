@@ -652,6 +652,14 @@ video {
   margin-top: 1.25rem;
 }
 
+.mr-2{
+  margin-right: 0.5rem;
+}
+
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .box-border{
   box-sizing: border-box;
 }
